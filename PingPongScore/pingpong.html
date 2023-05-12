@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+      <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTibxSJGoATKQ0m_xlwdUl-MoKwICcyWsZ7ZhFaz33atUlvZ3Si777cggH-Sr4td4xuvCk&usqp=CAU" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-4">Ping Pong Score Keeper</p>
+                        </div>
+                      </div>
+                      <div class="content block">
+                        <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                        <label for="playto" class="label is-large is-inline">Play Up To</label>
+                        <div class="select is-rounded block" name="" >
+                            <select id="playto">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            </select>
+                        </div>
+                    <div class="block">
+                        <button id="p1Button" class="button is-primary is-rounded">+1 Player One</button>
+                        <button id="p2Button" class="button is-link is-rounded">+1 Player Two</button>
+                        <button id="reset" class="button is-danger is-rounded">Reset</button>
+                    </div>
+                    <div class="block">
+                        <progress id="progressBar1" class="progress is-success" value="0" max="100">75%</progress>
+                        <progress id="progressBar2" class="progress is-danger" value="0" max="100">75%</progress>
+                    </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+
+</html>
